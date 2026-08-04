@@ -19,7 +19,7 @@ function Header() {
         </nav>
 
         <a
-          href="https://wa.me/5562999999999"
+          href="https://wa.me/5562996001595"
           target="_blank"
           className="rounded-full bg-teal-500 px-5 py-2 text-sm font-semibold text-black transition hover:bg-teal-400"
         >
