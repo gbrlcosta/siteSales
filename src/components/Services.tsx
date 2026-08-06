@@ -1,6 +1,6 @@
 const services = [
     "Landing pages para vendas",
-    "Sistemas e soluções web",
+    "Sistemas e soluções Web",
     "Portfólios profissionais",
     "Sites institucionais",
     "Experiências responsivas para celular",
