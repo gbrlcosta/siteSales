@@ -1,3 +1,5 @@
+import { QUOTE_REQUEST_URL, trackQuoteRequestConversion } from "../utils/gtag";
+
 function CTA() {
   return (
     <section className="px-6 py-24">
@@ -20,9 +22,10 @@ function CTA() {
           </p>
 
           <a
-            href="https://wa.me/5562996001595"
+            href={QUOTE_REQUEST_URL}
             target="_blank"
             rel="noreferrer"
+            onClick={trackQuoteRequestConversion}
             className="mt-8 inline-flex items-center justify-center rounded-full bg-black px-8 py-4 font-semibold text-white shadow-xl transition hover:scale-105 hover:bg-zinc-900"
           >
             Solicitar orçamento

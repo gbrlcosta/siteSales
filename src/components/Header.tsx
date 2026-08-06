@@ -1,4 +1,5 @@
 import logo from "../assets/logo.png";
+import { QUOTE_REQUEST_URL, trackQuoteRequestConversion } from "../utils/gtag";
 
 function Header() {
   return (
@@ -19,8 +20,10 @@ function Header() {
         </nav>
 
         <a
-          href="https://wa.me/5562996001595"
+          href={QUOTE_REQUEST_URL}
           target="_blank"
+          rel="noreferrer"
+          onClick={trackQuoteRequestConversion}
           className="rounded-full bg-teal-500 px-5 py-2 text-sm font-semibold text-black transition hover:bg-teal-400"
         >
           Solicitar orçamento
