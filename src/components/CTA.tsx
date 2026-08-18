@@ -17,15 +17,16 @@ function CTA() {
           </h2>
 
           <p className="mx-auto mt-5 max-w-2xl text-lg leading-relaxed text-black/75">
-            Vamos transformar sua presença online em uma experiência digital profissional,
-            moderna e preparada para gerar oportunidades.
+            Vamos transformar sua presença online em uma experiência digital
+            profissional, moderna e preparada para gerar oportunidades.
           </p>
 
           <a
             href={QUOTE_REQUEST_URL}
-            target="_blank"
-            rel="noreferrer"
-            onClick={trackQuoteRequestConversion}
+            onClick={(event) => {
+              event.preventDefault();
+              trackQuoteRequestConversion(QUOTE_REQUEST_URL);
+            }}
             className="mt-8 inline-flex items-center justify-center rounded-full bg-black px-8 py-4 font-semibold text-white shadow-xl transition hover:scale-105 hover:bg-zinc-900"
           >
             Solicitar orçamento

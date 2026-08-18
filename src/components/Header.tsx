@@ -21,9 +21,10 @@ function Header() {
 
         <a
           href={QUOTE_REQUEST_URL}
-          target="_blank"
-          rel="noreferrer"
-          onClick={trackQuoteRequestConversion}
+          onClick={(event) => {
+            event.preventDefault();
+            trackQuoteRequestConversion(QUOTE_REQUEST_URL);
+          }}
           className="rounded-full bg-teal-500 px-5 py-2 text-sm font-semibold text-black transition hover:bg-teal-400"
         >
           Solicitar orçamento
